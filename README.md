@@ -32,7 +32,7 @@ A small collection of examples from analytics projects (coursework + free time) 
 - **Probabilistic models:** Naive Bayes and full Bayesian classifiers for MNIST/Fashion-MNIST, including robustness checks with noisy inputs.
 
 **Links**
-- 📁 [GitHub folder: 2-ai-ml-models](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/2-ai-ml-models)
+- 📁 GitHub folder: [2-ai-ml-models](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/2-ai-ml-models)
 - ▶️ Run the scripts online in Google Colab:
   - [Neural network](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/2-ai-ml-models/sequential-neural-network/mlp-image-classification.ipynb)
   - [Q-learning Agent](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/2-ai-ml-models/q-learning/openai-taxi-solved.ipynb)
@@ -54,7 +54,7 @@ A small collection of examples from analytics projects (coursework + free time) 
 - Pivot-based analysis with slicers to quickly filter and compare segments.
 
 **Links**
-- 📁 [GitHub folder: 3-excel-xx-xx](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/TODO)
+- 📁 GitHub folder: [3-excel-xx-xx](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/TODO)
 - ⬇️ [Download the file](https://github.com/mikaelkankaanpaa/analytics-portfolio/raw/refs/heads/main/excel-VBA/custom-vba-simple-example.xlsm)
 
 **Tools:** Excel, Pivot Tables, Charts, Slicers, VBA macros. 
