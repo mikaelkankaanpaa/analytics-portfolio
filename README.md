@@ -44,7 +44,7 @@ A small collection of examples from analytics projects (coursework + free time) 
 
 
 ## 3) Sales Analytics Dashboard Automation (Excel + VBA)
-*NOTE: Running the file locally requires enabling macros for the file (right-clicking the downloaded file -> Properties -> General: Security and checking 'Unblock').*
+
 
 **Goal:** Build an interactive dashboard for sales analysis and pricing visualization using data from a gamified business simulation* (RealGame).
 
@@ -55,7 +55,7 @@ A small collection of examples from analytics projects (coursework + free time) 
 
 **Links**
 - 📁 GitHub folder: [3-excel-xx-xx](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/TODO)
-- ⬇️ [Download the file](https://github.com/mikaelkankaanpaa/analytics-portfolio/raw/refs/heads/main/excel-VBA/custom-vba-simple-example.xlsm)
+- ⬇️ [Click here to download the file](https://github.com/mikaelkankaanpaa/analytics-portfolio/raw/refs/heads/main/excel-VBA/custom-vba-simple-example.xlsm) *[Note, that running the file locally requires enabling macros for the file: right-click the downloaded file -> Properties -> General: Security -> select 'Unblock'.]*
 
 **Tools:** Excel, Pivot Tables, Charts, Slicers, VBA macros. 
 
