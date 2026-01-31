@@ -36,7 +36,9 @@ A small collection of examples from analytics projects (coursework + free time) 
 - ▶️ Run the scripts online in Google Colab:
   - [Neural network](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/2-ai-ml-models/sequential-neural-network/mlp-image-classification.ipynb)
   - [Q-learning Agent](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/2-ai-ml-models/q-learning/openai-taxi-solved.ipynb)
-  - [Bayesian Classifiers](TODO)
+  - Bayesian Classifiers:
+    - [Full Bayesian](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/2-ai-ml-models/bayesian-estimators/full-bayes-estimator.ipynb)
+    - [Naive Bayesian](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/2-ai-ml-models/bayesian-estimators/naive-bayes-estimator.ipynb)
 
 **Tools:** Python with TensorFlow/Keras, NumPy/SciPy, OpenAI Gym, Scikit. 
 
@@ -44,9 +46,7 @@ A small collection of examples from analytics projects (coursework + free time) 
 
 
 ## 3) Sales Analytics Dashboard Automation (Excel + VBA)
-
-
-**Goal:** Build an interactive dashboard for sales analysis and pricing visualization using data from a gamified business simulation<sup>1</sup> (RealGame).
+**Goal:** Build an interactive, lightweight Excel dashboard for sales analysis and pricing visualization, using data from a gamified business simulation<sup>1</sup> [RealGame](https://www.realgame.fi/).
 
 **What's Inside**
 - An Excel reporting workbook that turns raw data exports into a navigable dashboard view.
@@ -54,8 +54,8 @@ A small collection of examples from analytics projects (coursework + free time) 
 - Pivot-based analysis with slicers to quickly filter and compare segments.
 
 **Links**
-- 📁 GitHub folder: [3-excel-xx-xx](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/TODO)
-- ⬇️ [Click here to download the file](https://github.com/mikaelkankaanpaa/analytics-portfolio/raw/refs/heads/main/excel-VBA/custom-vba-simple-example.xlsm) *[Note, that running the file locally requires enabling macros for the file: right-click the downloaded file -> Properties -> General: Security -> select 'Unblock']*
+- 📁 GitHub folder: [3-excel-VBA-dashboard](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/3-excel-VBA-dashboard)
+- ⬇️ [Click here to download the file](https://github.com/mikaelkankaanpaa/analytics-portfolio/raw/refs/heads/main/3-excel-VBA-dashboard/custom-vba-simple-example.xlsm) *[Note, that running the file locally requires enabling macros for the file: right-click the downloaded file -> Properties -> General: Security -> select 'Unblock']*
 
 **Tools:** Excel, Pivot Tables, Charts, Slicers, VBA macros. 
 
