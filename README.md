@@ -46,7 +46,7 @@ A small collection of examples from analytics projects (coursework + free time) 
 ## 3) Sales Analytics Dashboard Automation (Excel + VBA)
 
 
-**Goal:** Build an interactive dashboard for sales analysis and pricing visualization using data from a gamified business simulation* (RealGame).
+**Goal:** Build an interactive dashboard for sales analysis and pricing visualization using data from a gamified business simulation<sup>1</sup> (RealGame).
 
 **What's Inside**
 - An Excel reporting workbook that turns raw data exports into a navigable dashboard view.
@@ -59,7 +59,7 @@ A small collection of examples from analytics projects (coursework + free time) 
 
 **Tools:** Excel, Pivot Tables, Charts, Slicers, VBA macros. 
 
-##### \* This is a small excerpt from analysis associated with the course "Business Decisions and Market Analytics", which was structured around the RealGame simulation. 
+<sup>1</sup> This is a small excerpt from analysis associated with the course "Business Decisions and Market Analytics", which was structured around the RealGame simulation. 
 ---
 
 ## Notes
