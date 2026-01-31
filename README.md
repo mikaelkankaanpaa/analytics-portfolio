@@ -1,59 +1,57 @@
-# analytics-portfolio
-A small collection of analytics projects (coursework + free time) that demonstrate my ability to turn data into **insight**, **usable tools**, and **decision support** — using Python, ML/AI methods, and Excel/VBA automation. 
+# Data Analytics Portfolio - Mikael Kankaanpää
+A small collection of example analytics projects (coursework + free time) that demonstrate my ability to turn data into **insight**, **usable tools**, and **decision support** — using Python, ML/AI methods, and Excel/VBA automation. 
 
 ## Projects
 
 ---
 
 ## 1) Premier League Player Performance Analytics (Python)
-**Goal:** Analyze Premier League 2023/24 player performance to surface **top performers**, **over/under-performance vs. expected goals (xG)**, and other decision-relevant insights, following a typical data analysis workflow (from data collection and cleaning to analysis and visualization).  
+**Goal:** Analyze Premier League player performance to surface **top performers**, **over/under-performance**, and other relevant insights, following a typical, end-to-end data analysis workflow and by utilizing AI modeling. 
 
-**What I built**
-- A cleaned and feature-engineered dataFrame combining multiple CSV sources (single analysis-ready table). 
-- Interactive visuals (incl. a small Dash app) to explore goal scoring and performance patterns. 
-- Two analytical layers:
-  - **Segmentation** (K-Means) to group players by xG vs. actual output.
-  - **Predictive ML modeling** (Random Forest) to estimate player ratings from performance metrics. 
+**What's Inside:**
+- End-to-end analysis notebook: data collection > merging > cleaning > feature engineering > EDA > clustering > modeling.   
+- Interactive visuals (Plotly) and a dynamic Dash component for exploring top scorers and distributions.   
+- Modeling:
+  - K-Means segmentation based on player performance.   
+  - Predictive Machine Learning (Random Forest model) to estimate player ratings from performance metrics. 
 
-**Highlights**
-- Advanced, interactive visualizations with Plotly and Dash 
-- Clear over/under-performer identification using xG vs. goals
-- ML model for predicting FotMob ratings
+**Links:**
+- 📁 View the notebook in GitHub: [1-python-performance-analytics-project](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/1-python-performance-analytics-project/code)
+- ▶️ Run the notebook online: [Project 1 - Google Colab](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/1-python-performance-analytics-project/code/analytics-project.ipynb)
 
-**Tools:** Python; pandas, NumPy, scikit, Matplotlib, Plotly, Dash 
+**Tools:** Python with pandas, NumPy, scikit, Matplotlib, Plotly, Dash, Jupyter Widgets
 
 ---
 
 ## 2) AI & ML Model Implementations (Python)
-**Goal:** Build practical intuition for core AI/ML approaches by implementing and evaluating models across supervised learning, reinforcement learning, and probabilistic methods. 
+**Goal:** Build practical intuition for core AI/ML approaches by implementing and evaluating models across supervised learning, reinforcement learning, and probabilistic methods.
 
-**What I built**
+**What's Inside:**
 - **Supervised learning:** Neural network for MNIST image classification with optimizable hyperparameters.
 - **Reinforcement learning:** Q-learning agent for OpenAI Gym Taxi-v3 using epsilon-greedy exploration.
 - **Probabilistic models:** Naive Bayes and full Bayesian classifiers for MNIST/Fashion-MNIST, including robustness checks with noisy inputs.
 
-**Highlights**
-- MNIST classifier achieving >97% test accuracy (best run). 
-- RL agent demonstrating learning progress via improved reward/steps over episodes.
-- Probabilistic baselines with explicit assumptions and interpretable parameters (means/variances/covariances). 
+**Links**
+- 📁 [GitHub folder](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/2-ai-ml-models)
+- ▶️ Runnable versions in Google Colab:
+  - [Neural network](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/2-ai-ml-models/sequential-neural-network/mlp-image-classification.ipynb)
+  - [Q-learning Agent](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/2-ai-ml-models/q-learning/openai-taxi-solved.ipynb)
+  - [Bayesian Classifiers](TODO)
 
-**Tools:** Python; TensorFlow/Keras, NumPy/SciPy, OpenAI Gym. 
+**Tools:** Python with TensorFlow/Keras, NumPy/SciPy, OpenAI Gym, Scikit. 
 
 ---
+
 
 ## 3) Sales Analytics Dashboard Automation (Excel + VBA)
 **NOTE:** Running the file locally requires enabling macros for the file (right-clicking the downloaded file -> Properties -> General: Security and checking 'Unblock'). 
 
-**Goal:** Build an interactive “mock dashboard” for sales analysis and pricing visualization using business simulator data (RealGame). 
+**Goal:** Build an interactive dashboard for sales analysis and pricing visualization using business simulator data (RealGame). 
 
-**What I built**
+**What's Inside**
 - An Excel reporting workbook that turns raw simulator exports into a navigable dashboard view.
 - VBA automation to update category-level pricing visuals and streamline reporting workflows.
 - Pivot-based analysis with slicers to quickly filter and compare segments. 
-
-**Highlights**
-- Demonstrates practical business analytics: structured inputs → automated outputs → decision-friendly visuals.
-- Focus on usability (fast filtering, clear visuals, reduced manual work). 
 
 **Tools:** Excel, Pivot Tables, Charts, Slicers, VBA macros. 
 
@@ -62,4 +60,3 @@ A small collection of analytics projects (coursework + free time) that demonstra
 ## Notes
 - Projects included are based on public datasets (Kaggle / MNIST / OpenAI Gym) or course-provided simulator data (RealGame). 
 - If you're reviewing this as part of an application and want a quick walkthrough, feel free to reach out.
-``
