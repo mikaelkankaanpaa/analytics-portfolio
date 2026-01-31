@@ -55,11 +55,11 @@ A small collection of examples from analytics projects (coursework + free time) 
 
 **Links**
 - 📁 GitHub folder: [3-excel-xx-xx](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/TODO)
-- ⬇️ [Click here to download the file](https://github.com/mikaelkankaanpaa/analytics-portfolio/raw/refs/heads/main/excel-VBA/custom-vba-simple-example.xlsm) *[Note, that running the file locally requires enabling macros for the file: right-click the downloaded file -> Properties -> General: Security -> select 'Unblock'.]*
+- ⬇️ [Click here to download the file](https://github.com/mikaelkankaanpaa/analytics-portfolio/raw/refs/heads/main/excel-VBA/custom-vba-simple-example.xlsm) *[Note, that running the file locally requires enabling macros for the file: right-click the downloaded file -> Properties -> General: Security -> select 'Unblock']*
 
 **Tools:** Excel, Pivot Tables, Charts, Slicers, VBA macros. 
 
-\* This is a small excerpt from analysis associated with the course "Business Decisions and Market Analytics", which was structured around the RealGame simulation. 
+##### \* This is a small excerpt from analysis associated with the course "Business Decisions and Market Analytics", which was structured around the RealGame simulation. 
 ---
 
 ## Notes
