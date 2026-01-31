@@ -59,7 +59,8 @@ A small collection of examples from analytics projects (coursework + free time) 
 
 **Tools:** Excel, Pivot Tables, Charts, Slicers, VBA macros. 
 
-<sup>1</sup> This is a small excerpt from analysis associated with the course "Business Decisions and Market Analytics", which was structured around the RealGame simulation. 
+**<sup>1</sup>** *This is a small excerpt from analysis associated with the course "Business Decisions and Market Analytics", which was structured around the RealGame simulation.* 
+
 ---
 
 ## Notes
