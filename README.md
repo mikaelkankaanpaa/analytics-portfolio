@@ -20,6 +20,8 @@ A small collection of examples from analytics projects (coursework + free time) 
 - ▶️ Run the notebook online: [Project 1 - Google Colab](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/1-python-performance-analytics-project/code/analytics-project.ipynb)
 
 **Tools:** Python with pandas, NumPy, scikit, Matplotlib, Plotly, Dash, Jupyter Widgets
+**Demonstrated Skills:**  
+Data analysis workflow, data wrangling and feature engineering, exploratory data analysis (EDA), clustering and predictive modeling, model evaluation, interactive data visualization, dashboard prototyping, translating analytics into performance insights
 
 ---
 
@@ -40,10 +42,11 @@ A small collection of examples from analytics projects (coursework + free time) 
     - [Full Bayesian](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/2-ai-ml-models/bayesian-estimators/full-bayes-estimator.ipynb)
     - [Naive Bayesian](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/2-ai-ml-models/bayesian-estimators/naive-bayes-estimator.ipynb)
 
-**Tools:** Python with TensorFlow/Keras, NumPy/SciPy, OpenAI Gym, Scikit. 
+**Tools:** Python with TensorFlow/Keras, NumPy/SciPy, OpenAI Gym, Scikit.
+**Demonstrated Skills:**  
+Supervised and reinforcement learning implementation, neural network development and tuning, probabilistic modeling, algorithm evaluation and benchmarking, experimentation and robustness testing, working with ML frameworks, translating theoretical ML concepts into practical implementations
 
 ---
-
 
 ## 3) Sales Analytics Dashboard Automation (Excel + VBA)
 **Goal:** Build an interactive, lightweight Excel dashboard for sales analysis and pricing visualization, using data from a gamified business simulation<sup>1</sup> [RealGame](https://www.realgame.fi/).
@@ -55,14 +58,41 @@ A small collection of examples from analytics projects (coursework + free time) 
 
 **Links**
 - 📁 GitHub folder: [3-excel-VBA-dashboard](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/3-excel-VBA-dashboard)
-- ⬇️ [Click here to download the file](https://github.com/mikaelkankaanpaa/analytics-portfolio/raw/refs/heads/main/3-excel-VBA-dashboard/custom-vba-simple-example.xlsm) *[Note, that running the file locally requires enabling macros for the file: right-click the downloaded file -> Properties -> General: Security -> select 'Unblock']*
+- ⬇️ [Click here to download the Excel-workbook](https://github.com/mikaelkankaanpaa/analytics-portfolio/raw/refs/heads/main/3-excel-VBA-dashboard/custom-vba-simple-example.xlsm) *[Note, that running the file locally requires enabling macros for the file: right-click the downloaded file -> Properties -> General: Security -> select 'Unblock']*
 
-**Tools:** Excel, Pivot Tables, Charts, Slicers, VBA macros. 
+**Tools:** Excel, Pivot Tables, Charts, Slicers, VBA macros.
+**Demonstrated Skills:**  
+Excel-based analytics, VBA scripting and workflow automation, pivot-based analysis, data visualization for decision support, transforming raw operational data into management-ready insights
 
 **<sup>1</sup>** *This is a small excerpt from analysis associated with the course "Business Decisions and Market Analytics", which was structured around the RealGame simulation.* 
 
 ---
 
+## 4) Health Care Cost Drivers Analysis (IBM SPSS)
+
+**Goal:**  
+Identify and quantify how lifestyle factors influence health care costs by building and validating a statistical regression model, demonstrating structured analytical problem-solving and statistical rigor.
+
+**What's Inside:**
+- End-to-end statistical analysis workflow including data preprocessing, transformation, exploratory correlation analysis, and model diagnostics.
+- Multiple linear regression model estimating the impact of behavioral variables on annual health care costs.
+- Full assumption validation to ensure model reliability:
+  - Outlier detection and treatment via log transformations.
+  - Linearity, homoscedasticity, and residual normality testing.
+  - Multicollinearity evaluation using VIF metrics.
+- Interpretation of statistical outputs into practical decision-support insights.
+
+**Links:**
+- 📁 GitHub folder: [4-SPSS-data-analysis](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/4-SPSS-data-analysis)
+- ⬇️ [Click here to download as PDF](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/4-SPSS-data-analysis/report/spss-data-analysis-project-report.pdf)
+
+**Tools:** IBM SPSS
+**Demonstrated Skills:**  
+Statistical regression modeling, diagnostic testing and assumption validation, data preprocessing and transformation, correlation analysis, statistical interpretation and reporting, translating statistical results into decision-support insights
+
+
+---
+
 ## Notes
-- Only projects based on public datasets (Kaggle / MNIST / OpenAI Gym) or course-provided simulator data (RealGame) are included in this portfolio. 
+- Only projects based on public datasets (Kaggle / MNIST / OpenAI Gym / GSS) or course-provided simulator data (RealGame) are included in this portfolio. 
 - If you're reviewing this as part of an application and want a quick walkthrough, feel free to reach out.
