@@ -84,7 +84,7 @@ Identify and quantify how lifestyle factors influence health care costs by build
 
 **Links:**
 - 📁 GitHub folder: [4-SPSS-data-analysis](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/4-SPSS-data-analysis)
-- ⬇️ [Click here to download as PDF](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/4-SPSS-data-analysis/report/spss-data-analysis-project-report.pdf)
+- ⬇️ [Click here to download the report as PDF](https://raw.githubusercontent.com/mikaelkankaanpaa/analytics-portfolio/main/4-SPSS-data-analysis/report/spss-data-analysis-project-report.pdf)
 
 **Tools:** IBM SPSS
 **Demonstrated Skills:**  
