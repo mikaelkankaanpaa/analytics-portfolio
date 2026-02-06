@@ -1,7 +1,7 @@
 # Data Analytics Portfolio - Mikael Kankaanpää
-A small collection of examples from analytics projects (coursework + free time) that demonstrate my ability to turn data into **insight**, **usable tools**, and **decision support** — using Python, ML/AI methods, and Excel/VBA automation. 
+A small collection of examples from analytics projects that demonstrate my ability to turn data into **insight**, **usable tools**, and **decision support** — using Python, ML/AI methods, and Excel/VBA automation and SPSS.
 
-## Projects
+## Projects:
 
 ---
 
@@ -19,7 +19,7 @@ A small collection of examples from analytics projects (coursework + free time) 
 - 📁 View the notebook in GitHub: [1-python-performance-analytics-project](https://github.com/mikaelkankaanpaa/analytics-portfolio/blob/main/1-python-performance-analytics-project/code/analytics-project.ipynb)
 - ▶️ Run the notebook online: [Project 1 - Google Colab](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/1-python-performance-analytics-project/code/analytics-project.ipynb)
 
-**Tools:** Python with pandas, NumPy, scikit, Matplotlib, Plotly, Dash, Jupyter Widgets
+**Tools:** Python with pandas, NumPy, scikit, Matplotlib, Plotly, Dash, Jupyter Widgets <br>
 **Demonstrated Skills:**  
 Data analysis workflow, data wrangling and feature engineering, exploratory data analysis (EDA), clustering and predictive modeling, model evaluation, interactive data visualization, dashboard prototyping, translating analytics into performance insights
 
@@ -42,7 +42,7 @@ Data analysis workflow, data wrangling and feature engineering, exploratory data
     - [Full Bayesian](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/2-ai-ml-models/bayesian-estimators/full-bayes-estimator.ipynb)
     - [Naive Bayesian](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/2-ai-ml-models/bayesian-estimators/naive-bayes-estimator.ipynb)
 
-**Tools:** Python with TensorFlow/Keras, NumPy/SciPy, OpenAI Gym, Scikit.
+**Tools:** Python with TensorFlow/Keras, NumPy/SciPy, OpenAI Gym, Scikit.<br>
 **Demonstrated Skills:**  
 Supervised and reinforcement learning implementation, neural network development and tuning, probabilistic modeling, algorithm evaluation and benchmarking, experimentation and robustness testing, working with ML frameworks, translating theoretical ML concepts into practical implementations
 
@@ -60,9 +60,9 @@ Supervised and reinforcement learning implementation, neural network development
 - 📁 GitHub folder: [3-excel-VBA-dashboard](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/3-excel-VBA-dashboard)
 - ⬇️ [Click here to download the Excel-workbook](https://github.com/mikaelkankaanpaa/analytics-portfolio/raw/refs/heads/main/3-excel-VBA-dashboard/custom-vba-simple-example.xlsm) *[Note, that running the file locally requires enabling macros for the file: right-click the downloaded file -> Properties -> General: Security -> select 'Unblock']*
 
-**Tools:** Excel, Pivot Tables, Charts, Slicers, VBA macros.
+**Tools:** Excel, Pivot Tables, Charts, Slicers, VBA macros.<br>
 **Demonstrated Skills:**  
-Excel-based analytics, VBA scripting and workflow automation, pivot-based analysis, data visualization for decision support, transforming raw operational data into management-ready insights
+Excel-based analytics, VBA scripting and workflow automation, pivot-based analysis, data visualization for decision support, raw data transformations
 
 **<sup>1</sup>** *This is a small excerpt from analysis associated with the course "Business Decisions and Market Analytics", which was structured around the RealGame simulation.* 
 
@@ -86,9 +86,9 @@ Identify and quantify how lifestyle factors influence health care costs by build
 - 📁 GitHub folder: [4-SPSS-data-analysis](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/4-SPSS-data-analysis)
 - ⬇️ [Click here to download the report as PDF](https://raw.githubusercontent.com/mikaelkankaanpaa/analytics-portfolio/main/4-SPSS-data-analysis/report/spss-data-analysis-project-report.pdf)
 
-**Tools:** IBM SPSS
+**Tools:** IBM SPSS <br>
 **Demonstrated Skills:**  
-Statistical regression modeling, diagnostic testing and assumption validation, data preprocessing and transformation, correlation analysis, statistical interpretation and reporting, translating statistical results into decision-support insights
+Statistical regression modeling, diagnostic testing and assumption validation, data preprocessing and transformation, correlation analysis, statistical interpretation and reporting, reporting
 
 
 ---
