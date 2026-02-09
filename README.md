@@ -1,5 +1,5 @@
-# Data Analytics Portfolio - Mikael Kankaanpää
-A small collection of examples from analytics projects that demonstrate my ability to turn data into **insight**, **usable tools**, and **decision support** — using Python, ML/AI methods, and Excel/VBA automation and SPSS.
+# Data Analytics & Technologies Portfolio - Mikael Kankaanpää
+A small collection of example projects that demonstrate my ability to leverage tech and turn data into **insight**, **usable tools**, and **decision support** — using Python, ML/AI methods, and Excel/VBA automation, SPSS and n8n.
 
 ## Projects:
 
@@ -90,6 +90,26 @@ Identify and quantify how lifestyle factors influence health care costs by build
 **Demonstrated Skills:**  
 Statistical regression modeling, diagnostic testing and assumption validation, data preprocessing and transformation, correlation analysis, statistical interpretation and reporting, reporting
 
+---
+
+## 5) News & Weather AI Assistant (n8n)
+
+**Goal:** Build a chat-based AI agent that can retrieve real-time Finnish and global news as well as weather data using tool-based automation in n8n.
+
+**What's Inside:**
+- A n8n workflow with a LLM-chat UI (Google Gemini)
+- Defined tools for fetching news from multiple RSS feeds and for retrieving weather data through API
+- Dynamic tool selection based on user chat inputs
+- Custom system instructions and prompt design
+
+**Links:**
+- 📁 GitHub folder: [5-n8n-ai-agent](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/5-n8n-ai-agent)
+- 🌐 Try chatting with the agent online: [n8n Webhook](https://mikaelkankaanpaa.app.n8n.cloud/webhook/e5616171-e3b5-4c39-81d4-67409f9fa60a/chat) 
+
+**Tools:** n8n, Google Gemini API, Openmeteo API, RSS feeds
+
+**Demonstrated Skills:**  
+AI agent design, workflow automation, low-code automation, prompt engineering, API integration, human-in-the-loop system design
 
 ---
 
