@@ -1,0 +1,399 @@
+{
+  "name": "AI Assistant Agent",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## How to use:\n\nClick the **🗨 Open chat** button and try asking:\n    *   “What’s the weather in Helsinki?”\n    *   “What are the latest news from Helsingin Sanomat?”\n    *   “What are the main news headlines globally?\"\n\nNOTE: The chat is also hosted at https://mikaelkankaanpaa.app.n8n.cloud/webhook/e5616171-e3b5-4c39-81d4-67409f9fa60a/chat",
+        "height": 236,
+        "width": 392,
+        "color": 7
+      },
+      "id": "3808de8d-ef18-47f5-9621-b08ba961ae01",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Introduction Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "creator": "Mikael Kankaanpää",
+      "position": [
+        64,
+        128
+      ],
+      "typeVersion": 1,
+      "notes": ""
+    },
+    {
+      "parameters": {
+        "content": "UI for the chatbot, feeds inputs to the Agent. ",
+        "height": 204,
+        "width": 300,
+        "color": 6
+      },
+      "id": "2b55763c-0541-4133-aa79-87c3ce9f0564",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Sticky Note12",
+      "type": "n8n-nodes-base.stickyNote",
+      "creator": "Mikael Kankaanpää",
+      "position": [
+        688,
+        368
+      ],
+      "typeVersion": 1,
+      "notes": ""
+    },
+    {
+      "parameters": {
+        "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\nHelps the agent to stay on topic and remember earlier prompts with a context window of 35 past interactions.",
+        "height": 276,
+        "width": 308,
+        "color": 3
+      },
+      "id": "f7c57d33-2318-409d-9084-13990299db3d",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Sticky Note15",
+      "type": "n8n-nodes-base.stickyNote",
+      "creator": "Mikael Kankaanpää",
+      "position": [
+        1328,
+        704
+      ],
+      "typeVersion": 1,
+      "notes": ""
+    },
+    {
+      "parameters": {
+        "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThese are the tools that the Agent can currently utilize.",
+        "height": 276,
+        "width": 372,
+        "color": 3
+      },
+      "id": "07ed7ed3-91d0-432f-9327-d2a30601082c",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Sticky Note16",
+      "type": "n8n-nodes-base.stickyNote",
+      "creator": "Mikael Kankaanpää",
+      "position": [
+        1664,
+        704
+      ],
+      "typeVersion": 1,
+      "notes": ""
+    },
+    {
+      "parameters": {
+        "contextWindowLength": 35
+      },
+      "id": "56d2684a-7f83-4ffd-8501-3253d999b4c6",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Conversation Memory",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "creator": "Mikael Kankaanpää",
+      "position": [
+        1440,
+        752
+      ],
+      "typeVersion": 1.3
+    },
+    {
+      "parameters": {
+        "content": "\n\n\n\n\n\n\n\n\n\n\n\n\nGoogle Gemini is used as the primary AI-model for chat functionality (all actions are performed with the predefined tools).",
+        "height": 252,
+        "width": 278,
+        "color": 3
+      },
+      "id": "199eb2cd-bc6b-4f61-bbf1-f196c7869b43",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "creator": "Mikael Kankaanpää",
+      "position": [
+        720,
+        704
+      ],
+      "typeVersion": 1,
+      "notes": ""
+    },
+    {
+      "parameters": {
+        "toolDescription": "Get weather forecast anywhere, anytime. You can make requests by assuming most information, the only thing you need is the location (use the city name to infer lat and long automatically) and time period (assume today if not specified)",
+        "url": "https://api.open-meteo.com/v1/forecast",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "latitude",
+              "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('parameters0_Value', `Latitude of the location, e.g. 45.75 for Lyon. Do not ask the user just infer it automatically.`, 'string') }}"
+            },
+            {
+              "name": "longitude",
+              "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('parameters1_Value', `Longitude of the location, e.g. 4.85 for Lyon. Do not ask the user just infer it automatically.`, 'string') }}"
+            },
+            {
+              "name": "current",
+              "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('parameters2_Value', `Comma-separated list of current weather variables (no whitespace).\n\nExample: temperature_2m,windspeed_10m,rain.\n\nOptions: temperature_2m,relative_humidity_2m,apparent_temperature,is_day,precipitation,rain,showers,snowfall,weathercode,cloudcover_total,pressure_msl,surface_pressure,windspeed_10m,winddirection_10m,windgusts_10m.`, 'string') }}"
+            },
+            {
+              "name": "hourly",
+              "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('parameters3_Value', `Comma-separated list of hourly weather variables (no whitespace). Hourly is only useful to get one day's information. For weakly overview please use daily.\n\nExample: temperature_2m,precipitation.\n\nOptions: temperature_2m,relative_humidity_2m,dewpoint_2m,apparent_temperature,precipitation,rain,showers,snowfall,snow_depth,pressure_msl,surface_pressure,cloudcover_total,cloudcover_low,cloudcover_mid,cloudcover_high,windspeed_10m,winddirection_10m,windgusts_10m,visibility,is_day,sunshine_duration,soil_temperature,soil_moisture,PM10,PM2_5,carbon_monoxide,ozone,us_aqi,UV_index.`, 'string') }}"
+            },
+            {
+              "name": "daily",
+              "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('parameters4_Value', `Comma-separated list of daily weather variables (no whitespace).\n\nExample: temperature_2m_max,precipitation_sum.\n\nOptions: weathercode,temperature_2m_max,temperature_2m_min,apparent_temperature_max,apparent_temperature_min,precipitation_sum,rain_sum,showers_sum,snowfall_sum,precipitation_hours,sunrise,sunset,daylight_duration,sunshine_duration,pressure_msl_max,pressure_msl_min,surface_pressure_max,surface_pressure_min,windgusts_10m_max,windspeed_10m_max,winddirection_10m_dominant,shortwave_radiation_sum.`, 'string') }}"
+            },
+            {
+              "name": "start_date",
+              "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('parameters5_Value', `Start date in YYYY-MM-DD format. Example: 2025-07-15`, 'string') }}"
+            },
+            {
+              "name": "end_date",
+              "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('parameters6_Value', `End date in YYYY-MM-DD format. Must be after start_date. Example: 2025-07-18`, 'string') }}"
+            },
+            {
+              "name": "temperature_unit",
+              "value": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('parameters7_Value', `Unit for temperature. Options: celsius (default), fahrenheit.`, 'string') }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "ac7d0dd1-8885-41c1-abda-f3742c838992",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Get Weather from Openmeteo",
+      "type": "n8n-nodes-base.httpRequestTool",
+      "creator": "Mikael Kankaanpää",
+      "position": [
+        1728,
+        752
+      ],
+      "notesInFlow": true,
+      "typeVersion": 4.2
+    },
+    {
+      "parameters": {
+        "options": {
+          "temperature": 0
+        }
+      },
+      "id": "c218a5da-bec7-4034-8d2b-f4bca34e551e",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Gemini API",
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "creator": "Mikael Kankaanpää",
+      "position": [
+        816,
+        752
+      ],
+      "typeVersion": 1,
+      "credentials": {
+        "googlePalmApi": {
+          "id": "9ctF3Uwlqd2b1GQQ",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "The actual Agent. It can:\n1. **Receive** messages from the chat\n2. **Select** the right tools (weather, news etc.)\n3. **Respond** with live answers\n\n\n\n\n\n\n\n\n\n\n",
+        "height": 284,
+        "width": 396,
+        "color": 5
+      },
+      "id": "f09c396a-dab8-41f8-a6e5-3dbd1dd70323",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Sticky Note13",
+      "type": "n8n-nodes-base.stickyNote",
+      "creator": "Mikael Kankaanpää",
+      "position": [
+        1232,
+        304
+      ],
+      "typeVersion": 1,
+      "notes": ""
+    },
+    {
+      "parameters": {
+        "needsFallback": true,
+        "options": {
+          "systemMessage": "=<role>\nYou are a personalized AI assistant built with n8n by Mikael Kankaanpää, designed to demonstrate how conversational AI can be combined with real-time data sources through automation. Simultaneously, you demostrate your creator's practical exposure to n8n. You are friendly, concise, and practical. Your role is to help users stay informed by providing up-to-date news summaries and weather information, while showcasing how AI agents can orchestrate tools inside n8n workflows.\n</role>\n\n<instructions>\n<goal>\nYour primary goal is to act as a live demonstration of an n8n-powered AI agent that combines conversational AI with external data sources. You help users by fetching and summarizing Finnish and global news and by providing current and forecasted weather information. At the same time, you demonstrate how an AI agent can intelligently use tools inside an automation workflow to retrieve and process real-world data.\n</goal>\n\n<context>\n### How I Work\nI am an AI model operating inside an n8n workflow. This workflow gives me two key things:\n1. A focused set of tools, such as news feeds and weather APIs, that I can call to retrieve real-time information.\n2. Simple, short-term memory that allows me to understand context within the current conversation.\n\nI do not generate live data myself. Whenever up-to-date or factual information is required, I rely on my tools.\n\n### My Purpose\nMy purpose is threefold:\n1. Provide immediate user value by helping users understand what’s happening in the news and what to expect from the weather.\n2. Demonstrate how n8n AI agents can act as a conversational layer on top of automations, APIs, and data pipelines, without requiring complex user interfaces.\n3. Being a practical example of my creator's - Mikael Kankaanpää's - skills in utilizing n8n.\n\n### My Tools Instructions\nYou must choose one of your available tools if the user’s request matches its capability. You cannot perform these actions yourself; you must call the appropriate tool and present its results clearly.\n\nIf a request cannot be fulfilled using the available tools, explain the limitation transparently and suggest what you can help with instead.\n\n### Current Date & Time\n{{ $now }}\n</context>\n\n<output_format>\n- Respond in a friendly, clear, and professional tone.\n- When a user’s request requires a tool, first select the appropriate tool, then present the result in a concise and human-readable way.\n- Avoid unnecessary technical jargon unless the user asks how the agent works.\n- Be proactive: if the user is unsure what to ask, suggest example requests such as:\n  - “What are today’s top headlines?”\n  - “Summarize the latest main news from Finnish outlets.”\n  - “What’s the weather forecast for Helsinki?”\n  - “What can you help me with?”\n</output_format>\n</instructions>\n"
+        }
+      },
+      "id": "332af12a-45ab-4e5d-8dab-da21ba2111f9",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "AI Assistant Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "creator": "Mikael Kankaanpää",
+      "position": [
+        1312,
+        432
+      ],
+      "typeVersion": 2.2,
+      "notes": ""
+    },
+    {
+      "parameters": {
+        "public": true,
+        "initialMessages": "Hi! 👋 I’m a demo AI assistant built by Mikael Kankaanpää using n8n. \n\nI can help you stay informed by summarizing the latest main news from Finnish (e.g. HS, YLE) and global outlets (e.g. BBC, CNN), and provide you with current weather conditions and forecasts for anywhere in the world. Try asking things like: “What are today’s top headlines globally?”, “What’s the weather forecast for Milano?” or \"What can you do?\"",
+        "options": {
+          "inputPlaceholder": "Type your prompt here... / Kirjoita tähän... ",
+          "showWelcomeScreen": false,
+          "subtitle": "Try me out! You can see detailed description of the workflow at: https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/5-n8n-ai-agent",
+          "title": "Weather and News AI Agent ⛅📰🤖",
+          "responseMode": "lastNode"
+        }
+      },
+      "id": "95421925-c5ad-48bd-9638-c84ff5b5e3c6",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Chat",
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "creator": "Mikael Kankaanpää",
+      "position": [
+        784,
+        432
+      ],
+      "webhookId": "e5616171-e3b5-4c39-81d4-67409f9fa60a",
+      "typeVersion": 1.1
+    },
+    {
+      "parameters": {
+        "toolDescription": "Gets the latest news from predefined sources, including Finnish and global outlets. ",
+        "url": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('URL', `For global headlines and global main news, use the following sources:\n- https://feeds.bbci.co.uk/news/world/rss.xml (BBC World – global headlines)\n- http://rss.cnn.com/rss/edition_world.rss (CNN World – breaking news worldwide)\n\nFor latest main news from Finnish outlets, use the following:\n- http://www.hs.fi/rss/teasers/etusivu.xml (Helsingin Sanomat - etusivu)\n-  https://yle.fi/rss/uutiset/paauutiset (YLE - pääuutiset)\n\nIn addition, for most popular/most read news topics, you can use:\n- https://yle.fi/rss/uutiset/luetuimmat (for Finland)\n- http://rss.cnn.com/rss/cnn_topstories.rss (for global news)`, 'string') }}",
+        "options": {}
+      },
+      "id": "24fc1fd5-ed10-43d9-9b35-8facb7f357d5",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Get News from RSS Feeds",
+      "type": "n8n-nodes-base.rssFeedReadTool",
+      "creator": "Mikael Kankaanpää",
+      "position": [
+        1888,
+        752
+      ],
+      "typeVersion": 1.2
+    },
+    {
+      "parameters": {
+        "content": "\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpenAI Chat Model is used as fallback, if Gemini fails (e.g., running out of tokens)",
+        "height": 268,
+        "width": 278,
+        "color": 3
+      },
+      "id": "fcf3002e-e571-46b7-ac5d-727e30833ba7",
+      "cid": "Ikx1Y2FzIFBleXJpbiI",
+      "name": "Sticky Note1",
+      "type": "n8n-nodes-base.stickyNote",
+      "creator": "Mikael Kankaanpää",
+      "position": [
+        1024,
+        704
+      ],
+      "typeVersion": 1,
+      "notes": ""
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-5-mini"
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        1120,
+        752
+      ],
+      "id": "f1460657-4fbd-4277-9763-07a11c9a5575",
+      "name": "OpenAI API (Fallback)",
+      "credentials": {
+        "openAiApi": {
+          "id": "ggsTiqnnzeGD1xEi",
+          "name": "n8n free OpenAI API credits"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Conversation Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Assistant Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Weather from Openmeteo": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Assistant Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Gemini API": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Assistant Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Chat": {
+      "main": [
+        [
+          {
+            "node": "AI Assistant Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get News from RSS Feeds": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Assistant Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI API (Fallback)": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Assistant Agent",
+            "type": "ai_languageModel",
+            "index": 1
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "758791ac-37cd-4401-a76e-660095381fbd",
+  "meta": {
+    "templateId": "6270",
+    "templateCredsSetupCompleted": true,
+    "instanceId": "7c6abffdc0ec04233c1614b553b847f2fe369150e3e644ee3cfc0df63197e8b1"
+  },
+  "id": "bi4eeVZkMaZs7rsEevYli",
+  "tags": []
+}
