@@ -26,7 +26,7 @@ Data analysis workflow, data wrangling and feature engineering, exploratory data
 ---
 
 ## 2) Dynamic Sales Analytics Dashboard (Excel + VBA)
-**Goal:** Build an interactive, lightweight Excel dashboard for competitor and sales analysis, using data from a gamified business simulation<sup>1</sup> [RealGame](https://www.realgame.fi/).
+**Goal:** Build an interactive, lightweight Excel dashboard for competitor and sales analysis, using data from a business simulation<sup>1</sup> [RealGame](https://www.realgame.fi/).
 
 **What's Inside**
 - An Excel reporting workbook that turns raw data exports into a navigable dashboard view.
