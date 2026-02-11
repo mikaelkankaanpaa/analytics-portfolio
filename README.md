@@ -1,5 +1,5 @@
 # Data Analytics & Technologies Portfolio - Mikael Kankaanpää
-A small collection of example projects that demonstrate my ability to leverage tech and turn data into **insight**, **usable tools**, and **decision support** — using Python, ML/AI methods, and Excel/VBA automation, SPSS and n8n.
+A small collection of example projects that demonstrate my ability to leverage tech and turn data into **insight**, **usable tools**, and **decision support** — using Python, ML/AI methods, Excel/VBA automation, SPSS and n8n.
 
 ## Projects:
 
@@ -25,7 +25,27 @@ Data analysis workflow, data wrangling and feature engineering, exploratory data
 
 ---
 
-## 2) AI & ML Model Implementations (Python)
+## 2) Dynamic Sales Analytics Dashboard (Excel + VBA)
+**Goal:** Build an interactive, lightweight Excel dashboard for competitor and sales analysis, using data from a gamified business simulation<sup>1</sup> [RealGame](https://www.realgame.fi/).
+
+**What's Inside**
+- An Excel reporting workbook that turns raw data exports into a navigable dashboard view.
+- VBA automation to update segment-level KPIs, perfomance and pricing visuals and streamline reporting workflows.
+- Concrete decision-support tools driven from a large set of transaction data.
+
+**Links**
+- 📁 GitHub folder: [2-excel-VBA-dashboard](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/2-excel-VBA-dashboard)
+- ⬇️ [Click here to download the Excel-workbook](https://github.com/mikaelkankaanpaa/analytics-portfolio/raw/refs/heads/main/2-excel-VBA-dashboard/custom-vba-example.xlsm) *[Note, that full functionality requires enabling macros for the file: right-click the downloaded file -> Properties -> General: Security -> select 'Unblock']*
+
+**Tools:** Excel, VBA macros, Pivot Tables, Charts, Functions <br>
+**Demonstrated Skills:**  
+Excel-based analytics, VBA scripting and workflow automation, pivot-based analysis, data visualization for decision support, raw data transformations
+
+**<sup>1</sup>** *This is a small excerpt from analysis associated with the course "Business Decisions and Market Analytics", which was structured around the RealGame simulation.* 
+
+---
+
+## 3) AI & ML Model Implementations (Python)
 **Goal:** Build practical intuition for core AI/ML approaches by implementing and evaluating models across supervised learning, reinforcement learning, and probabilistic methods.
 
 **What's Inside:**
@@ -34,37 +54,17 @@ Data analysis workflow, data wrangling and feature engineering, exploratory data
 - **Probabilistic models:** Naive Bayes and full Bayesian classifiers for MNIST/Fashion-MNIST, including robustness checks with noisy inputs.
 
 **Links**
-- 📁 GitHub folder: [2-ai-ml-models](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/2-ai-ml-models)
+- 📁 GitHub folder: [3-ai-ml-models](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/3-ai-ml-models)
 - ▶️ Run the scripts online in Google Colab:
-  - [Neural network](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/2-ai-ml-models/sequential-neural-network/mlp-image-classification.ipynb)
-  - [Q-learning Agent](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/2-ai-ml-models/q-learning/openai-taxi-solved.ipynb)
+  - [Neural network](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/3-ai-ml-models/sequential-neural-network/mlp-image-classification.ipynb)
+  - [Q-learning Agent](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/3-ai-ml-models/q-learning/openai-taxi-solved.ipynb)
   - Bayesian Classifiers:
-    - [Full Bayesian](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/2-ai-ml-models/bayesian-estimators/full-bayes-estimator.ipynb)
-    - [Naive Bayesian](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/2-ai-ml-models/bayesian-estimators/naive-bayes-estimator.ipynb)
+    - [Full Bayesian](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/3-ai-ml-models/bayesian-estimators/full-bayes-estimator.ipynb)
+    - [Naive Bayesian](https://colab.research.google.com/github/mikaelkankaanpaa/analytics-portfolio/blob/main/3-ai-ml-models/bayesian-estimators/naive-bayes-estimator.ipynb)
 
 **Tools:** Python with TensorFlow/Keras, NumPy/SciPy, OpenAI Gym, Scikit.<br>
 **Demonstrated Skills:**  
 Supervised and reinforcement learning implementation, neural network development and tuning, probabilistic modeling, algorithm evaluation and benchmarking, experimentation and robustness testing, working with ML frameworks, translating theoretical ML concepts into practical implementations
-
----
-
-## 3) Sales Analytics Dashboard Automation (Excel + VBA)
-**Goal:** Build an interactive, lightweight Excel dashboard for sales analysis and pricing visualization, using data from a gamified business simulation<sup>1</sup> [RealGame](https://www.realgame.fi/).
-
-**What's Inside**
-- An Excel reporting workbook that turns raw data exports into a navigable dashboard view.
-- VBA automation to update category-level pricing visuals and streamline reporting workflows.
-- Pivot-based analysis with slicers to quickly filter and compare segments.
-
-**Links**
-- 📁 GitHub folder: [3-excel-VBA-dashboard](https://github.com/mikaelkankaanpaa/analytics-portfolio/tree/main/3-excel-VBA-dashboard)
-- ⬇️ [Click here to download the Excel-workbook](https://github.com/mikaelkankaanpaa/analytics-portfolio/raw/refs/heads/main/3-excel-VBA-dashboard/custom-vba-simple-example.xlsm) *[Note, that running the file locally requires enabling macros for the file: right-click the downloaded file -> Properties -> General: Security -> select 'Unblock']*
-
-**Tools:** Excel, Pivot Tables, Charts, Slicers, VBA macros.<br>
-**Demonstrated Skills:**  
-Excel-based analytics, VBA scripting and workflow automation, pivot-based analysis, data visualization for decision support, raw data transformations
-
-**<sup>1</sup>** *This is a small excerpt from analysis associated with the course "Business Decisions and Market Analytics", which was structured around the RealGame simulation.* 
 
 ---
 
